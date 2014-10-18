@@ -41,6 +41,16 @@ Section
 }
 ```
 
+User
+
+```
+{
+    "_id": String,
+    "username": String,
+    "pass": String
+}
+```
+
 Comment
 
 ```
