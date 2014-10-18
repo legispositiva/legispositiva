@@ -7,42 +7,42 @@ This is the bit you should read
 
 Document
 
-```json
+```
 {
     "_id": ObjectID,
     "documentId": String,
     "timestamp": ISODate,
     "articles": [ArticleId],
-    "ammends": ObjectID // DocumentID
+    "ammends": ObjectID        // -> DocumentID
 }
 ```
 
 Article
 
-```json
+```
 {
     "_id": ObjectID,
     "articleId": String,
     "timestamp": ISODate,
     "sections": [SectionId],
-    "ammends": ObjectID // ArticleID
+    "ammends": ObjectID         // -> ArticleID
 }
 ```
 
 Section
 
-```json
+```
 {
     "_id": ObjectID,
     "sectionId": String,
     "timestamp": ISODate,
     "content": String,
-    "ammends": ObjectID // SectionID
+    "ammends": ObjectID        // -> SectionID
 }
 ```
 
 Comment
 
-```json
+```
 {}
 ```
