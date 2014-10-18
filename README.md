@@ -21,7 +21,7 @@ Article
 
 ```json
 {
-    "_id": String,
+    "_id": ObjectID,
     "articleId": String,
     "timestamp": ISODate,
     "sections": [SectionId],
@@ -33,8 +33,8 @@ Section
 
 ```json
 {
-    "_id": String,
-    "SectionId": Urn,
+    "_id": ObjectID,
+    "sectionId": Urn,
     "timestamp": ISODate,
     "content": String,
     "ammends": ObjectID // SectionID
