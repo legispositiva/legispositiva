@@ -34,7 +34,7 @@ Section
 ```json
 {
     "_id": ObjectID,
-    "sectionId": Urn,
+    "sectionId": String,
     "timestamp": ISODate,
     "content": String,
     "ammends": ObjectID // SectionID
