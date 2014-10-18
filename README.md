@@ -9,11 +9,11 @@ Document
 
 ```json
 {
-    "_id": String,
+    "_id": ObjectID,
     "documentId": String,
     "timestamp": ISODate,
     "articles": [ArticleId],
-
+    "ammends": ObjectID // DocumentID
 }
 ```
 
@@ -25,6 +25,7 @@ Article
     "articleId": String,
     "timestamp": ISODate,
     "sections": [SectionId],
+    "ammends": ObjectID // ArticleID
 }
 ```
 
@@ -35,6 +36,13 @@ Section
     "_id": String,
     "SectionId": Urn,
     "timestamp": ISODate,
-    "content": String
+    "content": String,
+    "ammends": ObjectID // SectionID
 }
+```
+
+Comment
+
+```json
+{}
 ```
