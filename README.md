@@ -3,7 +3,7 @@
 This is the bit you should read
 
 
-# Proposed Scema
+# Proposed Schema
 
 Document
 
