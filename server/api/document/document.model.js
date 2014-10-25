@@ -6,10 +6,13 @@ var ObjectId = mongoose.Schema.Types.ObjectId;
 
 var DocumentSchema = new Schema({
     documentId: String,
-    timestamp: Date,
-    articles: [{ type: ObjectId, ref: 'Article' }],
-    _ammends: { type: ObjectId, ref: 'Document' },
-    _creator: { type: ObjectId, ref: 'User' }
+    timestamp:  Date,
+    title:      String,
+    articles:   [
+        { type: ObjectId, ref: 'Article' }
+    ],
+    _ammends:   { type: ObjectId, ref: 'Document' },
+    _creator:   { type: ObjectId, ref: 'User' }
 })
 
 /**
