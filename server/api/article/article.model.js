@@ -4,9 +4,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = mongoose.Schema.Types.ObjectId;
 
-var DocumentSchema = new Schema({
+var ArticleSchema = new Schema({
 
-    documentId: {
+    articleId: {
         type: String,
         required: true,
         index: true
@@ -23,13 +23,13 @@ var DocumentSchema = new Schema({
         required: true
     },
 
-    articles: [
-        { type: ObjectId, ref: 'Article' }
+    sections: [
+        { type: ObjectId, ref: 'Section' }
     ],
 
     _ammends: {
         type: ObjectId,
-        ref: 'Document',
+        ref: 'Article',
         index: true
     },
 
@@ -45,7 +45,7 @@ var DocumentSchema = new Schema({
 /**
  * Virtuals
  */
-// DocumentSchema
+// ArticleSchema
 //   .virtual('')
 
-module.exports = mongoose.model('Document', DocumentSchema)
+module.exports = mongoose.model('Article', ArticleSchema)
